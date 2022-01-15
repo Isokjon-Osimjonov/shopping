@@ -1,0 +1,47 @@
+ul{
+    display: flex;
+    
+}
+
+.products__banner__wrapper{
+    width: 90%;
+    height: 180px;
+    /* background-color: #ec9e38; */
+    background-color: #fcf8f8;
+
+    /* border: 1px solid grey; */
+
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.products__banner__link{
+    width: 180px;
+    height: 180px;
+    background-color:#fff;
+    /* border: 1px solid grey; */
+    border-radius: 15px;
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.63);
+
+
+}
+
+
+.product__book,.product__parfume{
+    width: 160px;
+    height: 160px;
+}
+
+.produxt__watch,.product__phone,.product__laptop,.product__tv{
+    width: 160px;
+    height: 160px;
+}

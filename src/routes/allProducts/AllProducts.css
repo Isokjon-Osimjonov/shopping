@@ -1,0 +1,224 @@
+.allProducts__wrapper__page{
+    width: 96%;
+    height: auto;
+background-color: #e98a0e9d;
+background-color: #fcf8f8;
+box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.63);
+
+/* background-color: #F5F5F5; */
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #292929;
+    line-height: 1.7em;
+    font-weight: 400;
+    position: relative;
+
+}
+
+
+/************************Google font == Didact Gothic**************/
+/* 
+.product__block{
+width: 200px;
+height: 300px;
+} */
+/*  */
+
+
+/* .row{
+} */
+
+.allproducts__buttons{
+    width: 240px;
+    height: auto;
+    /* background-color: gold; */
+position: absolute;
+bottom: 30px;
+/* position: relative; */
+}
+
+
+
+
+
+.section-bg
+{
+    padding: 60px 0;
+
+}
+
+.single-product
+{
+    box-shadow: inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    background: #f0f0f0;
+    /* border: 1px solid grey; */
+text-align: center;
+width: 300px;
+height: 400px;
+position: relative;
+}
+.single-product .product-thumb
+{
+    margin-bottom: 20px;
+}
+.product__div
+{
+    display: inline-block;
+    width: 200px;
+    height: 160px;
+    margin-left: 20px;
+    
+}
+.single-product .product-title
+{
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+.single-product .product-title h3
+{
+    font-family: "Didact Gothic",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.single-product .product-title h3 a
+{
+    color: #292929;
+    text-decoration: none;
+}
+.single-product .product-title h3 a:hover
+{
+    color:#7289ab
+}
+.single-product:hover
+{
+    box-shadow:-2px -2px 8px white,
+          -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+          2px 2px 8px rgba(0,0,0,0.15); 
+}
+
+.product-btns
+{
+    display: flex;
+    justify-content: space-between;
+   
+    /* background-color: red; */
+}
+
+a
+{
+    /* text-decoration: none; */
+    cursor: pointer;
+    transition: 0.3s;
+    color: #292929;
+}
+
+.btn-small
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    border-radius: 50px;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    transition: 0.4s;
+    /* margin-right: 10px; */
+}
+
+.btn-round
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+    /* margin-right: 10px; */
+
+
+}
+.btn-small:hover
+{
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+     text-decoration: none;
+}
+.btn-round:hover
+{
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+    color: #7289ab;
+}
+
+.button-center
+{
+    justify-content: center;
+    text-align: center;
+}
+
+.bttn-def
+{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 42px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: -2px -2px 8px white,
+     -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+     2px 2px 8px rgba(0,0,0,0.15);
+     transition: 0.4s;
+     font-family:"Didact Gothic", sans-serif ;
+
+}
+
+.bttn-def:hover
+{
+    color: #7289ab;
+    box-shadow:inset -2px -2px 8px white,
+    inset -2px -2px 12px rgba(255,255,255,0.5),
+    inset 2px 2px 4px rgba(255,255,255,0.1),
+    inset 2px 2px 8px rgba(0,0,0,0.15);
+     color: #7289ab;
+}
+.bttn-def:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+

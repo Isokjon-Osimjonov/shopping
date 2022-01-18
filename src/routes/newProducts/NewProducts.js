@@ -1,5 +1,6 @@
-import React ,{ useEffect } from "react";
-import "../allProducts/AllProducts.css";
+import React,{useEffect} from 'react'
+import '../../routes/newProducts/NewProducts.css'
+
 import Phone from "../../assets/images/phone.jpg";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import {BsStarFill} from 'react-icons/bs'
@@ -12,24 +13,23 @@ import Iphone13 from '../../assets/images/13pro.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-function AllProducts() {
+function NewProducts() {
 
 
-  useEffect(()=>{
-    AOS.init({
-      // offset: 900,
-      duration: 600,
-      // easing: 'ease-in-sine',
-      // delay: 100,
-    })
-  })
+    useEffect(()=>{
+        AOS.init({
+          // offset: 900,
+          duration: 600,
+          // easing: 'ease-in-sine',
+          // delay: 100,
+        })
+      })
 
+    return (
+        <div className='new__products__main'>
+<h1 className='new__products__title'>Recently Added Products</h1>
 
-  return (
-    <div className="allProducts__wrapper__page">
-      <h1 className="all__products">Allproducts In Stock</h1>
-
-<div className="product__container">
+            <div className="product__container">
   <div className="product__block__info"   data-aos="zoom-in" > 
   <p className="product__sale"> 20% Sale</p>
   <div className="product__image">
@@ -437,15 +437,11 @@ function AllProducts() {
   </div>
 
 </div>
-   
-      
 
-          
-          
-          </div>
 
-     
-  );
+
+        </div>
+    )
 }
 
-export default AllProducts;
+export default NewProducts

@@ -1,0 +1,10 @@
+.product__block__book{
+    width: 96%;
+    min-height: 100vh;
+    max-height: auto;
+    margin: auto;
+    border: 15px;
+    background-color: #fcf8f8;
+    box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.20);
+
+}

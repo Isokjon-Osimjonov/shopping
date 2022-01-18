@@ -1,4 +1,4 @@
-.aboutus__main__wrapper{
+.aboutus__main__wrapper {
     width: 96%;
     height: 80vh;
     /* background-color: rgb(44, 60, 212); */
@@ -8,15 +8,17 @@
     /* background-color: #F5F5F5; */
     border-radius: 15px;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     position: relative;
-    border-top: 1px solid grey;
-box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.63);
-position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
+    /* box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.20); */
+    box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.20);
+
+    position: relative;
 
 }
 
-.abooutus__page__title{
+.abooutus__page__title {
     font-weight: 900;
     letter-spacing: 2px;
     /* color: gold; */
@@ -27,21 +29,27 @@ position: relative;
     left: 200px;
 }
 
-.aboutus_description{
+.aboutus_description {
     width: 40%;
-    height: 300px;
+    height: 200px;
     /* background-color: green; */
     margin: 0;
     position: absolute;
     top: 200px;
-left: 100px;
-font-size: 18px;
-color:#222;
+    left: 100px;
+    font-size: 18px;
+    color: #222;
+    background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.5px);
+-webkit-backdrop-filter: blur(2.5px);
+border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 
 
-.aboutus__page__img{
+.aboutus__page__img {
     width: 700px;
     height: 700px;
     float: right;
@@ -52,9 +60,9 @@ color:#222;
 
 }
 
-.sosheal__media__links{
-    position: relative;
-    width: 700px;
+.sosheal__media__links {
+    position: absolute;
+    width: 600px;
     height: auto;
     /* background-color: blue; */
     top: 650px;
@@ -65,24 +73,64 @@ color:#222;
 
 }
 
-.media{
+.media {
     color: #222;
     font-size: 24px;
-    /* margin-right: 40px; */
 
 }
 
-.media__icons__t{
-    color: rgb(66,159,225);
-    font-size: 60px;
+.media__icons__t {
+    width: 60px;
+    height: 60px;
 }
-.media__icons__i{
-    color: #405DE6;
-    font-size: 60px;
+
+.media__icons__i {
+    width: 50px;
+    height: 50px;
 
 }
-.media__icons__f{
-    color: rgb(66,159,225);
-    font-size: 60px;
+
+.media__icons__f {
+    width: 50px;
+    height: 50px;
+}
+
+.phone__location {
+    width: 60px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 450px;
+    left: 100px;
+
+}
+
+.phone__contact {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.location__contact {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+.contact__info__aboutus {
+    width: 285px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 465px;
+    left: 170px;
+}
+.phone__number,.email_p{
+    color: #222;
 
 }

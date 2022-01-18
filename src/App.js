@@ -14,12 +14,13 @@ import SelectedToBuy from "./routes/selected/SelectedToBuy";
 import Login from "./auth/login/Login";
 import Register from "./auth/login/Register";
 import Footer from "./components/footer/Footer";
+import NewProducts from "./routes/newProducts/NewProducts";
 
 
 
 function App() {
   return (
-   <Router>
+   <Router> 
 
 <div>
   <Header/>
@@ -36,17 +37,24 @@ function App() {
   <Route path="/selectedtobuy"  element={<SelectedToBuy/>} />
   <Route path="/login"  element={<Login/>} />
   <Route path="/register"  element={<Register/>} />
+  <Route path="/"  element={<NewProducts/>} />
 
 </Routes>
-<Footer/>
 
 
 </div>
+{/* <div className="new__products__main__wrapper">
 
-
-
+</div> */}
+<Footer/>
 
    </Router>
+
+
+
+
+
+
   );
 }
 

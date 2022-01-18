@@ -1,3 +1,15 @@
 a{
     text-decoration: none !important;
 }
+
+
+.new__products__main__wrapper{
+    width: 96%;
+    min-height: 100vh;
+    max-height: auto;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 14px 1px rgba(0, 0, 0, 0.20);
+    background-color: #fcf8f8;
+
+}

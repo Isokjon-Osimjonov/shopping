@@ -1,4 +1,4 @@
-import React ,{ useEffect } from "react";
+import React ,{ useEffect,useState } from "react";
 import "../allProducts/AllProducts.css";
 import Phone from "../../assets/images/phone.jpg";
 import { RiShoppingCart2Line } from "react-icons/ri";
@@ -23,418 +23,125 @@ function AllProducts() {
       // delay: 100,
     })
   })
+//   const [price,setPrice] = useState([]);
+// function shopPrice(prices){
+//   console.log(prices);
 
+//   setPrice([...prices]);
+//   localStorage.getItem("price",JSON.stringify(price));
+// }
+
+   const data = [
+     {
+       id:0,
+       sale:20,
+       imgData:Phone,
+       title:"Iphon 13 ",
+       desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+       price:1200
+     },
+     {
+      id:1,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 13 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    },
+    {
+      id:2,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 13 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    },
+    {
+      id:3,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 13 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    },
+    {
+      id:4,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 13 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    },
+    {
+      id:5,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 13 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    },
+    {
+      id:6,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 13 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    },
+    {
+      id:7,
+      sale:20,
+      imgData:Phone,
+      title:"Iphon 56 ",
+      desc:"lorem sadaskdjksdladkaslkdjasldksadnas",
+      price:1200
+    }
+     
+   ]
 
   return (
     <div className="allProducts__wrapper__page">
       <h1 className="all__products">Allproducts In Stock</h1>
 
 <div className="product__container">
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
+ 
+ {
+      data.map((base)=>(
+ 
+        <div className="product__block__info"   data-aos="zoom-in" key={base.id}> 
+        <p className="product__sale">{base.sale} % Sale</p>
+           <div className="product__image">
+             <img src={base.imgData} />
+           </div>
+           <div className="product__mainname">
+             <h1>{base.title}</h1>
+             <div className="product__evaluation">
+             <p><BsStarFill/></p>
+             <p><BsStarFill/></p>
+             <p><BsStarFill/></p>
+             <p><BsStarFill/></p>
+             <p><BsStarFill/></p>
+           </div>
+           </div>
+           <div className="product__description"> 
+           <p>
+              {base.desc}
+            </p>
+           </div>
+     
+         <div className="product__buttons__price">
+           <span    className="product__heart"><FaRegHeart  /></span>
+         <div  className="product__price"><p >${base.price}</p> </div>
+         <span className="product__buy"> <MdAddShoppingCart /></span>
+       </div>
+       
+       </div>
+      ))
+ }
 
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
+{/* onClick={(f)=>shopPrice(base)} */}
 
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
 
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
-  <div className="product__block__info"   data-aos="zoom-in" > 
-  <p className="product__sale"> 20% Sale</p>
-  <div className="product__image">
-    <img src={Iphone13} />
-  </div>
-  <div className="product__mainname">
-    <h1>Iphone13 Pro Max</h1>
-    <div className="product__evaluation">
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-    <p><BsStarFill/></p>
-  </div>
-  </div>
-  <div className="product__description"> 
-  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque quia quisquam dolorum dolores, rerum officia, voluptatibus dolo </p>
-  
-  </div>
-
-<div className="product__buttons__price">
-  <span    className="product__heart"><FaRegHeart/></span>
- <div  className="product__price"><p >$1200</p> </div>
- <span className="product__buy"> <MdAddShoppingCart /></span>
-</div>
-  
-  </div>
 
 </div>
    

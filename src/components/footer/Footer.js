@@ -20,7 +20,9 @@ function Footer() {
             {/* <h1 className='footer__phone'>
                 <span className='call'>Call</span> +998907508090
             </h1> */}
-          <Link to='/'> <h1 className='footer__logo'> LOGO</h1> </Link>  
+          <Link to='/'
+          onClick={(e)=>window.scrollTo({top:0,behaviour:"smoth"})}
+          > <h1 className='footer__logo'> LOGO</h1> </Link>  
 {/* <img src={FooterImg} className='footer__img' /> */}
 
 <div className="copyright__footer">

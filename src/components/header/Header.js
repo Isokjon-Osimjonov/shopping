@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FiShoppingCart, FiHeart, FiSearch } from "react-icons/fi";
 import { FaRegUser } from "react-icons/fa";
 
@@ -8,6 +8,10 @@ import { FaRegUser } from "react-icons/fa";
 // import 'react-simple-typewriter/dist/index.css'
 
 function Header() {
+  const location = useLocation()
+  if(location.pathname === "/admin"){
+    return <></>;
+  }else{
   return (
     <div>
       <div className="header">
@@ -67,6 +71,7 @@ function Header() {
       </div>
     </div>
   );
+}
 }
 
 export default Header;

@@ -15,6 +15,7 @@ import Login from "./auth/login/Login";
 import Register from "./auth/login/Register";
 import Footer from "./components/footer/Footer";
 import NewProducts from "./routes/newProducts/NewProducts";
+import Admin from "./routes/admin/Admin";
 
 
 
@@ -39,7 +40,11 @@ function App() {
   <Route path="/register"  element={<Register/>} />
   <Route path="/"  element={<NewProducts/>} />
 
+  <Route path="/admin"  element={<Admin/>} />
+
+
 </Routes>
+
 
 
 </div>

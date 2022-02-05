@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../allProducts/AllProducts.css";
 // import Iphone13 from "../../assets/images/Iphone13.jpg";
-import { RiShoppingCart2Line } from "react-icons/ri";
+// import { RiShoppingCart2Line } from "react-icons/ri";
 import { BsStarFill } from "react-icons/bs";
 
 import { FaRegHeart } from "react-icons/fa";
@@ -119,7 +119,7 @@ function AllProducts() {
               {base.sale} % Sale
             </p>
             <div className="product__image">
-              <img src={base.imgData} />
+              <img src={base.imgData}  alt="" />
             </div>
             <div className="product__mainname">
               <h1>
